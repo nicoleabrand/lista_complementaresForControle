@@ -9,7 +9,25 @@
     */
 
     //ENTRADA
+    const qtfilme = Number(prompt(`Quantos filmes deseja cadastrar?`))
+    let comedia= [];
+    let drama= [];
+    let romance= [];
 
+    for (let filmes=1; filmes<=qtfilme; filmes++) {
+        let filme= prompt(`Informe o filme que deseja adicionar`)
+        let genero= prompt(`Qual o gênero do filme? Utilize C(Comédia), D(Drama) e R(Romance)`).toUpperCase()
+        if(genero=="C") {
+            comedia.push(filme)
+        }
+        if(genero=="D") {
+            drama.push(filme)
+        }
+        if(genero=="R") {
+            romance.push(filme)
+        }
+    }
+    alert(`Comédia:${comedia.join(", ")}\nDrama:${drama.join(", ")}\nRomance:${romance.join(", ")}`)
     
     //PROCESSAMENTO
     
