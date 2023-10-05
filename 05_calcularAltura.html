@@ -6,7 +6,15 @@
     - Menor altura 
     - Maior altura
     */
-
+    const qtPessoas=Number(prompt(`Informe a quantidade de pessoas que terão sua altura informada`))
+    let alturas= []
+    for (let index = 1; index <= qtPessoas; index++) {
+        const pessoa = Number(prompt(`Qual a altura?`))
+        alturas.push(pessoa)
+    }
+    const maiorAltura= Math.max(...alturas)
+    const menorAltura= Math.min(...alturas)
+    alert(`A maior altura é ${maiorAltura} e a menor ${menorAltura}`)
     //ENTRADA
 
     

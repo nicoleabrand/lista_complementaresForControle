@@ -8,7 +8,31 @@
     */
 
     //ENTRADA
-
+    const investimento= 100
+    let investimentoTotal=0
+    let rendimento= 0
+    for (let meses = 1; meses <=96; meses++) {
+        investimentoTotal = (investimento*1.018)*meses
+        if (meses==24) {
+            alert(`O investimento total em 24 meses foi de R$${investimentoTotal.toFixed(2)}`)
+        }
+        if (meses==48) {
+            alert(`O investimento total em 48 meses foi de R$${investimentoTotal.toFixed(2)}`)
+        }
+        if (meses==96) {
+            alert(`O investimento total em 96 meses foi de R$${investimentoTotal.toFixed(2)}`)
+        }
+        rendimento= (investimento*0.018)*meses
+        if (meses==24) {
+            alert(`O rendimento total em 24 meses foi de R$${rendimento.toFixed(2)}`)
+        }
+        if (meses==48) {
+            alert(`O rendimento total em 48 meses foi de R$${rendimento.toFixed(2)}`)
+        }
+        if (meses==96) {
+            alert(`O rendimento total em 96 meses foi de R$${rendimento.toFixed(2)}`)
+        }
+    }
     
     //PROCESSAMENTO
     

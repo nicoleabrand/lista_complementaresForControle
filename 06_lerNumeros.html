@@ -8,8 +8,16 @@
     */
 
     //ENTRADA
-
-    
+    let listaDeNumeros = [4, 8, 12, 35, 78, 83, 5, 22, 49, 95];
+    let abaixoDe50= []
+    let acimaDe50= []
+    for (const item of listaDeNumeros) {
+        if (item<50)
+        abaixoDe50.push(item)
+        if(item>50)
+        acimaDe50.push(item)
+    }
+    alert(`Abaixo de 50:${abaixoDe50.join(", ")}\nAcima de 50:${acimaDe50.join(", ")}\nO percentual de números abaixo de 50 é de ${abaixoDe50.length%listaDeNumeros.length}% e o de acima ${acimaDe50.length%listaDeNumeros.length}%`)
     //PROCESSAMENTO
     
     
